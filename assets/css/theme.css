@@ -3534,14 +3534,14 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)
+  justify-content: center;
+  padding: none
 }
 .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-between
+  justify-content: center
 }
 .navbar-brand {
   padding-top: var(--bs-navbar-brand-padding-y);
@@ -3549,7 +3549,7 @@ textarea.form-control-lg {
   margin-right: var(--bs-navbar-brand-margin-end);
   font-size: var(--bs-navbar-brand-font-size);
   color: var(--bs-navbar-brand-color);
-  text-decoration: none;
+  text-decoration: BOLD;
   white-space: nowrap
 }
 .navbar-brand:hover, .navbar-brand:focus {
@@ -3603,10 +3603,10 @@ textarea.form-control-lg {
   }
 }
 .navbar-toggler:hover {
-  text-decoration: none
+  text-decoration: bold
 }
 .navbar-toggler:focus {
-  text-decoration: none;
+  text-decoration: bold;
   outline: 0;
   box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width)
 }
@@ -11357,4 +11357,34 @@ a.theme-link:hover {
   .form-inline .form-control {
     width: 400px
   }
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: visible;
+  background-color: #fff;
+  position: absolute; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #000;
+  color: white;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
