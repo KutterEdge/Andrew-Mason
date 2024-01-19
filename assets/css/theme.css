@@ -54,9 +54,9 @@
   --bs-secondary-bg-subtle: #dbdce5;
   --bs-success-bg-subtle: #d1e7dd;
   --bs-info-bg-subtle: #cff4fc;
-  --bs-warning-bg-subtle: #fff3cd;
+  --bs-warning-bg-subtle: #000;
   --bs-danger-bg-subtle: #f8d7da;
-  --bs-light-bg-subtle: #fff;
+  --bs-light-bg-subtle: #000;
   --bs-dark-bg-subtle: #ced0e1;
   --bs-primary-border-subtle: #f8c1a7;
   --bs-secondary-border-subtle: #b7bacb;
@@ -75,9 +75,9 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #fff;
+  --bs-body-color: #000;
   --bs-body-color-rgb: 28, 30, 46;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #000;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -87,7 +87,7 @@
   --bs-secondary-bg-rgb: 237.5945945946, 238.3513513514, 244.4054054054;
   --bs-tertiary-color: rgba(28, 30, 46, 0.5);
   --bs-tertiary-color-rgb: 28, 30, 46;
-  --bs-tertiary-bg: #fff;
+  --bs-tertiary-bg: #000;
   --bs-tertiary-bg-rgb: 255, 255, 255;
   --bs-heading-color: inherit;
   --bs-link-color: #ed6524;
@@ -96,7 +96,7 @@
   --bs-link-hover-color: #be511d;
   --bs-link-hover-color-rgb: 190, 81, 29;
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
+  --bs-highlight-bg: #000;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dedfeb;
@@ -572,7 +572,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: .875em;
-  color: #9ea3c4
+  color: #fff
 }
 .blockquote-footer::before {
   content: "\2014\00A0"
@@ -2689,9 +2689,9 @@ textarea.form-control-lg {
 }
 .btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #ed6524;
-  --bs-btn-border-color: #ed6524;
-  --bs-btn-hover-color: #000;
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #f07c45;
   --bs-btn-hover-border-color: #ef743a;
   --bs-btn-focus-shadow-rgb: 201, 86, 31;
@@ -2739,7 +2739,7 @@ textarea.form-control-lg {
   --bs-btn-color: #000;
   --bs-btn-bg: #0dcaf0;
   --bs-btn-border-color: #0dcaf0;
-  --bs-btn-hover-color: #000;
+  --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #31d2f2;
   --bs-btn-hover-border-color: #25cff2;
   --bs-btn-focus-shadow-rgb: 11, 172, 204;
@@ -2784,10 +2784,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #dc3545
 }
 .btn-light {
-  --bs-btn-color: #000;
+  --bs-btn-color: #fff;
   --bs-btn-bg: #fff;
   --bs-btn-border-color: #fff;
-  --bs-btn-hover-color: #000;
+  --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #d9d9d9;
   --bs-btn-hover-border-color: #ccc;
   --bs-btn-focus-shadow-rgb: 217, 217, 217;
@@ -2816,11 +2816,11 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #1c1e2e
 }
 .btn-outline-primary {
-  --bs-btn-color: #ed6524;
-  --bs-btn-border-color: #ed6524;
+  --bs-btn-color: #ff0000;
+  --bs-btn-border-color: #ff0000;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #ed6524;
-  --bs-btn-hover-border-color: #ed6524;
+  --bs-btn-hover-bg: #ff0000;
+  --bs-btn-hover-border-color: #ff0000;
   --bs-btn-focus-shadow-rgb: 237, 101, 36;
   --bs-btn-active-color: #000;
   --bs-btn-active-bg: #ed6524;
@@ -11032,11 +11032,11 @@ textarea.form-control-lg {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #000
+  color: #fff
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: 'Quicksand', sans-serif;
-  color: #000;
+  color: #fff;
   font-weight: bold
 }
 a.theme-link {
@@ -11113,15 +11113,15 @@ a.theme-link:hover {
   background: #fff
 }
 .theme-bg-primary {
-  background: #fff
+  background: #000
 }
 .theme-bg-light-gradient {
   background-image: linear-gradient(to bottom, #f6f8fc 0%, #fff 70%)
 }
 #topcontrol {
   transition: all 0.4s ease-in-out;
-  background: #fff;
-  color: #000;
+  background: #000;
+  color: #fff;
   text-align: center;
   display: inline-block;
   z-index: 30;
@@ -11152,8 +11152,8 @@ a.theme-link:hover {
   max-width: 760px
 }
 .site-logo .logo-text {
-  color: #1c1e2e;
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 0rem;
   font-weight: bold
 }
 .footer .copyright {
@@ -11235,7 +11235,7 @@ a.theme-link:hover {
   height: 100%
 }
 .benefits-section .item-icon {
-  font-size: 3rem;
+  font-size: 0rem;
   color: #fff
 }
 .benefits-section .item-heading {
@@ -11291,7 +11291,7 @@ a.theme-link:hover {
   font-style: italic
 }
 .author-section {
-  color: #000
+  color: #fff
 }
 .author-section .author-pic {
   width: 150px;
@@ -11362,7 +11362,7 @@ a.theme-link:hover {
 /* The navigation bar */
 .navbar {
   overflow: visible;
-  background-color: #fff;
+  background-color: #000;
   position: absolute; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -11372,7 +11372,7 @@ a.theme-link:hover {
 .navbar a {
   float: left;
   display: block;
-  color: #000;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -11380,8 +11380,8 @@ a.theme-link:hover {
 
 /* Change background on mouse-over */
 .navbar a:hover {
-  background: #000;
-  color: white;
+  background: #fff;
+  color: #000;
 }
 
 /* Main content */
